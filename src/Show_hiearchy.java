@@ -12,8 +12,6 @@ import com.mongodb.gridfs.GridFSDBFile;
 
 
 
-
-
 import javafx.application.Application;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -50,7 +48,7 @@ public class Show_hiearchy  extends Application {
 	 //method call when double click on folder next level of hiearchy will show 
 	 public  void  file_show_with_hiearchy(ListView<Label> list_view_to_show_file,int i ,ObservableList<Label> items_to_show_file,GridFS photo){
 		 Image text_file = new Image(getClass().getResourceAsStream("text_file.png"));
-			Image pdf = new Image(getClass().getResourceAsStream("pdf.gif"));
+			Image pdf = new Image(getClass().getResourceAsStream("pdf.png"));
 			Image folder = new Image(getClass().getResourceAsStream("folder.png"));
 		 DBObject query = new BasicDBObject().append("metadata.level",level_file);
 		    List<GridFSDBFile> files = photo.find(query);
